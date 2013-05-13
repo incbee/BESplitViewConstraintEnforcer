@@ -3,6 +3,25 @@ BESplitViewConstraintEnforcer
 
 Enforces minimum widths on an `NSSplitView`.
 
+
+Usage
+-----
+
+Create a list of minimum pane widths, one per pane, from left to right. Then pass this list to the constraint enforcer and make it the split view's delegate:
+
+    NSArray *minimumPaneWidths = [NSArray arrayWithObjects: @200.0f, @300.0f, @340.0f, nil];
+    // assume defined in header
+    splitViewConstraintEnforcer = [[BESplitViewConstraintEnforcer alloc] initWithMinimumPaneWidths:minimumPaneWidths];
+    // assume defined and initialized elsewhere, for example as an outlet
+    [splitView setDelegate:splitViewConstraintEnforcer];
+
+
+Caveats
+-------
+
+Only tested for horizontally aligned split views.
+
+
 License
 -------
 
