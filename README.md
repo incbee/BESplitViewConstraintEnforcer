@@ -1,4 +1,4 @@
 BESplitViewConstraintEnforcer
 =============================
 
-Enforces minimum widths on an NSSplitView
+Enforces minimum widths on an `NSSplitView`.
