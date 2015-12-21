@@ -19,7 +19,8 @@ Create a list of minimum pane widths, one per pane, from left to right. Then pas
 Caveats
 -------
 
-Only tested for horizontally aligned split views.
+Only works for split views with vertical dividers, that is, those with columns
+arranged horizontally.
 
 
 License
