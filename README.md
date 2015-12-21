@@ -22,6 +22,10 @@ Caveats
 Only works for split views with vertical dividers, that is, those with columns
 arranged horizontally.
 
+A split view maintains only a weak reference to its delegate. So if you set the
+constraint enforcer as the delegate you need to ensure you hold a strong
+reference to the enforcer. Otherwise you'll get some cryptic crashes.
+
 
 License
 -------
